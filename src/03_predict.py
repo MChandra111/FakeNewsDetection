@@ -47,13 +47,12 @@ def main():
     
     print()
     print("=== Prediction ===")
-    if(confidence < 0.70):
-        print("Unclear prediction. Confidence is low. (Confidence: {confidence:.2%})")
-    else:
-        print(f"Label:      {label} ({label_name})")
-        print(f"Confidence: {confidence:.2%}")
-        print()
+    print(f"Label:      {label} ({label_name})")
+    print(f"Confidence: {confidence:.2%}")
+    print()
     
+    if(confidence < 0.70):
+        print(f"Unclear prediction. Confidence is low.")
 
 if __name__ == "__main__":
     main()

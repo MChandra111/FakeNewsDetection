@@ -10,7 +10,7 @@ from sklearn.pipeline import Pipeline
 from sklearn.feature_extraction.text import TfidfVectorizer
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-DATA_PATH = PROJECT_ROOT / "data" / "processed" / "all_news.csv"
+DATA_PATH = PROJECT_ROOT / "data" / "processed" / "all_news_political_balanced.csv"
 MODELS_DIR = PROJECT_ROOT / "models"
 MODEL_PATH = MODELS_DIR / "baseline.joblib"
 
